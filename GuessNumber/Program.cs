@@ -10,6 +10,26 @@ namespace GuessNumber
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Select Number");
+            Console.WriteLine("1.) # Bisections    2.)Human Guess    3.)Computer Guess");
+            int selection = int.Parse(Console.ReadLine());
+            switch (selection)
+            {
+                case 1:
+                    {
+                        break;
+                    }
+                case 2:
+                    {
+                        break;
+                    }
+                case 3:
+                    {
+                        break;
+                    }
+            }
+
+
             Console.WriteLine("enter number");
             int input = int.Parse(Console.ReadLine());
             List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

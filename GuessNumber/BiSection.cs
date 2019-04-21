@@ -9,8 +9,10 @@ namespace GuessNumber
     class BiSection
     {
         public List<int> Numbers { get; set; }
+        public int Input { get; set; }
 
-        public void NumbersAvailable(List<int> Numbers)
+
+        public void NumbersAvailable()
         {
             Console.WriteLine("Numbers Available");
             foreach (var i in this.Numbers)
@@ -18,5 +20,6 @@ namespace GuessNumber
                 Console.WriteLine(i);
             }
         }
+
     }
 }
