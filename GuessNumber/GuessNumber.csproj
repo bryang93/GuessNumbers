@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiSection.cs" />
+    <Compile Include="ComputerPlays.cs" />
+    <Compile Include="HumanPlays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
