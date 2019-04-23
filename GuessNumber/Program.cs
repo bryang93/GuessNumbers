@@ -13,6 +13,7 @@ namespace GuessNumber
         {
             BiSection bi = new BiSection();
             ComputerPlays comP = new ComputerPlays();
+            HumanPlays humanP = new HumanPlays();
             Random random = new Random();
 
 
@@ -30,6 +31,8 @@ namespace GuessNumber
                     }
                 case 2:
                     {
+                        Console.Clear();
+                        humanP.Operate(random);
                         break;
                     }
                 case 3:
