@@ -12,6 +12,8 @@ namespace GuessNumber
         static void Main(string[] args)
         {
             BiSection bi = new BiSection();
+            ComputerPlays comP = new ComputerPlays();
+            Random random = new Random();
 
 
 
@@ -21,7 +23,8 @@ namespace GuessNumber
             switch (selection)
             {
                 case 1:
-                    {                       
+                    {
+                        Console.Clear();
                         bi.FindNumber(Numbers);
                         break;
                     }
@@ -31,6 +34,8 @@ namespace GuessNumber
                     }
                 case 3:
                     {
+                        Console.Clear();
+                        comP.Operate(random);
                         break;
                     }
             }

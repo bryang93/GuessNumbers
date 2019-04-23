@@ -8,42 +8,21 @@ namespace GuessNumber
 {
     class HumanPlays
     {
-        // 100 numbers to choose from
-        // computer guesses number
-        //human says too high or low or correct
-        // Display value, guess, each repetition
-        int NumSelected { get; set; }
-        int RandomNumber { get; set; }
-        int Max = 100;
-        public void SelectNumber()
+        private int NumSelected { get; set; }
+        private int Max { get; set; }
+        private int Min { get; set; }
+
+
+        private void GuessNumber()
         {
-            Console.WriteLine("Select number between 1 - 100");
+            Console.WriteLine("Guess number between {Min} - {Max}");
             NumSelected = int.Parse(Console.ReadLine());
-            if (NumSelected < 1 || NumSelected > 100)
+            if (NumSelected < Min || NumSelected > Max)
             {
-                SelectNumber();
+                Console.Clear();
+                GuessNumber();
             }
-        } 
-
-        public void GuessNumber(Random random)
-        {
-            RandomNumber = random.Next(Max)+1;
-        }
-        public void HighGuess()
-        {
-            Max -= (Max - RandomNumber);
         }
 
-        public void LowGuess()
-        {
-            Max-= 
-        }
-
-        public void Operate(Random random)
-        {
-            SelectNumber();
-            GuessNumber(random);
-
-        }
     }
 }
